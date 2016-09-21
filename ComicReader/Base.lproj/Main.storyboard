@@ -115,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="515" y="171"/>
         </scene>
-        <!--书城-->
+        <!--漫库-->
         <scene sceneID="KZ2-XX-Arm">
             <objects>
                 <navigationController id="LEE-Ev-yGO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="书城" image="tab2_nor" id="gUt-dB-DVX"/>
+                    <tabBarItem key="tabBarItem" title="漫库" image="tab2_nor" id="gUt-dB-DVX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1XD-sZ-TqP" customClass="NavigationStyle">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

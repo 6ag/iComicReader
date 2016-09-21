@@ -72,4 +72,6 @@ alpha:1.0]
 #import "AFNetWorking.h"
 #import "KVNProgress.h"
 #import "JFJumpToControllerManager.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <Firebase/Firebase.h>
 

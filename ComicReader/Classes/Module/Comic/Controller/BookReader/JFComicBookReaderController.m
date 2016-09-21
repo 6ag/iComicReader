@@ -10,11 +10,12 @@
 #import "JFComicShowImageContentCell.h"
 #import "JFComicReaderBookModel.h"
 
-@interface JFComicBookReaderController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface JFComicBookReaderController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, GADInterstitialDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *contentCollectionView;
 
 @property (nonatomic, strong) JFComicReaderBookModel *contentModel;
+@property(nonatomic, strong) GADInterstitial *interstitial;
 
 @end
 
@@ -26,6 +27,10 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
     
     [self requestData];
     [self initSubViews];
+    self.interstitial = [self createAndLoadInterstitial];
+    
+    // 添加横幅广告
+//    [self.view addSubview:[self createBannerView]];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTappedContentView:)];
     [self.view addGestureRecognizer:tap];
@@ -37,6 +42,32 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
+/**
+ *  创建横幅广告
+ */
+- (GADBannerView *)createBannerView {
+    GADBannerView *bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+    bannerView.frame = CGRectMake(0, kScreenHeight - 50, kScreenWidth, 50);
+    bannerView.rootViewController = self;
+    bannerView.adUnitID = @"ca-app-pub-3941303619697740/8007370512";
+    [bannerView loadRequest:[GADRequest request]];
+    return bannerView;
+}
+
+/**
+ *  创建插页广告
+ */
+- (GADInterstitial *)createAndLoadInterstitial {
+    GADInterstitial *interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-3941303619697740/9484103714"];
+    interstitial.delegate = self;
+    [interstitial loadRequest:[GADRequest request]];
+    return interstitial;
+}
+
+- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
+    self.interstitial = [self createAndLoadInterstitial];
+}
+
 - (void)initSubViews{
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.contentCollectionView.collectionViewLayout;
     layout.minimumLineSpacing = 0;
@@ -46,6 +77,11 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
 }
 
 - (void)didTappedContentView:(UITapGestureRecognizer *)tag {
+    
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController:self];
+    }
+    
     BOOL alpha = [UIApplication sharedApplication].statusBarHidden;
     [UIView animateWithDuration:0.25 animations:^{
         [[UIApplication sharedApplication] setStatusBarHidden:!alpha withAnimation:UIStatusBarAnimationSlide];

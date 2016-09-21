@@ -20,7 +20,7 @@
     self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:17],
                                                                     NSForegroundColorAttributeName: [UIColor whiteColor]};
     
-    self.tabBar.tintColor = [UIColor orangeColor];
+    self.tabBar.tintColor = [UIColor colorWithRed:1.000 green:0.749 blue:0.000 alpha:1.000];
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"";
     self.navigationItem.backBarButtonItem = backItem;

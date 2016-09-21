@@ -22,9 +22,7 @@
 		04ACB62E1A2D50DD00A9FAA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB62C1A2D50DD00A9FAA6 /* LaunchScreen.xib */; };
 		04ACB63A1A2D50DD00A9FAA6 /* ComicReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB6391A2D50DD00A9FAA6 /* ComicReaderTests.m */; };
 		04ACB6461A2D586200A9FAA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB6451A2D586200A9FAA6 /* Images.xcassets */; };
-		4201BB151E8D41FBDAC8E562 /* libPods-ComicReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C960DFDD68B6B1BAEAD62863 /* libPods-ComicReader.a */; };
 		5324FFEE49339D650C371827 /* libPods-ComicReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2BB18C2E9AE20C1D635C4B /* libPods-ComicReaderTests.a */; };
-		9D899B0A598386141FC19B40 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521533871A11B515AB29F8C4 /* libPods.a */; };
 		B21C7F3F1D79A07B008A7089 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B21C7F3E1D79A07B008A7089 /* GoogleService-Info.plist */; };
 		B21C80001D79A3F3008A7089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C7F431D79A3F3008A7089 /* AppDelegate.m */; };
 		B21C80011D79A3F3008A7089 /* NavigationStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C7F471D79A3F3008A7089 /* NavigationStyle.m */; };
@@ -106,6 +104,8 @@
 		B21C804D1D79A3F3008A7089 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21C7FF91D79A3F3008A7089 /* KVNProgressView.xib */; };
 		B21C804E1D79A3F3008A7089 /* UIScrollView+UzysAnimatedGifLoadMore.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C7FFC1D79A3F3008A7089 /* UIScrollView+UzysAnimatedGifLoadMore.m */; };
 		B21C804F1D79A3F3008A7089 /* UzysAnimtedGifLoadMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C7FFF1D79A3F3008A7089 /* UzysAnimtedGifLoadMoreView.m */; };
+		B21C80531D79C5B0008A7089 /* libPods-ComicReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21C80521D79C5B0008A7089 /* libPods-ComicReader.a */; };
+		B21C80551D79C5B7008A7089 /* libPods-ComicReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21C80541D79C5B7008A7089 /* libPods-ComicReaderTests.a */; };
 		EE5D953C1CD74A8C0045B1BB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D953B1CD74A8C0045B1BB /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
@@ -291,6 +291,9 @@
 		B21C7FFD1D79A3F3008A7089 /* UzysAnimatedGifLoadMoreConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAnimatedGifLoadMoreConfiguration.h; sourceTree = "<group>"; };
 		B21C7FFE1D79A3F3008A7089 /* UzysAnimtedGifLoadMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAnimtedGifLoadMoreView.h; sourceTree = "<group>"; };
 		B21C7FFF1D79A3F3008A7089 /* UzysAnimtedGifLoadMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysAnimtedGifLoadMoreView.m; sourceTree = "<group>"; };
+		B21C80511D79AECF008A7089 /* ComicReader-Prefix Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComicReader-Prefix Header.h"; sourceTree = "<group>"; };
+		B21C80521D79C5B0008A7089 /* libPods-ComicReader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ComicReader.a"; path = "Pods/../build/Debug-iphoneos/libPods-ComicReader.a"; sourceTree = "<group>"; };
+		B21C80541D79C5B7008A7089 /* libPods-ComicReaderTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ComicReaderTests.a"; path = "Pods/../build/Debug-iphoneos/libPods-ComicReaderTests.a"; sourceTree = "<group>"; };
 		C960DFDD68B6B1BAEAD62863 /* libPods-ComicReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2BB18C2E9AE20C1D635C4B /* libPods-ComicReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC63833D5981548536E932B2 /* Pods-ComicReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicReader/Pods-ComicReader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -303,10 +306,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21C80551D79C5B7008A7089 /* libPods-ComicReaderTests.a in Frameworks */,
+				B21C80531D79C5B0008A7089 /* libPods-ComicReader.a in Frameworks */,
 				EE5D953C1CD74A8C0045B1BB /* Accelerate.framework in Frameworks */,
 				044FA33F1A3FD10B0069A867 /* SystemConfiguration.framework in Frameworks */,
-				9D899B0A598386141FC19B40 /* libPods.a in Frameworks */,
-				4201BB151E8D41FBDAC8E562 /* libPods-ComicReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +370,7 @@
 		04ACB61A1A2D50DD00A9FAA6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B21C80511D79AECF008A7089 /* ComicReader-Prefix Header.h */,
 				B21C7F3E1D79A07B008A7089 /* GoogleService-Info.plist */,
 				04ACB6271A2D50DD00A9FAA6 /* Main.storyboard */,
 				04ACB6451A2D586200A9FAA6 /* Images.xcassets */,
@@ -401,6 +405,8 @@
 		A3B1A303FF180FBA064296AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B21C80541D79C5B7008A7089 /* libPods-ComicReaderTests.a */,
+				B21C80521D79C5B0008A7089 /* libPods-ComicReader.a */,
 				EE5D953B1CD74A8C0045B1BB /* Accelerate.framework */,
 				521533871A11B515AB29F8C4 /* libPods.a */,
 				C960DFDD68B6B1BAEAD62863 /* libPods-ComicReader.a */,
@@ -1350,13 +1356,17 @@
 			baseConfigurationReference = EC63833D5981548536E932B2 /* Pods-ComicReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ComicReader/Classes/Application/ComicReader-Prefix Header.h";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ComicReader/ComicReader-Prefix Header.h";
 				INFOPLIST_FILE = ComicReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.6ag.IComic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1369,13 +1379,17 @@
 			baseConfigurationReference = 54B6C0A09A772A0137764819 /* Pods-ComicReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ComicReader/Classes/Application/ComicReader-Prefix Header.h";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ComicReader/ComicReader-Prefix Header.h";
 				INFOPLIST_FILE = ComicReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.6ag.IComic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
